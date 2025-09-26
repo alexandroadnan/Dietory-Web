@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="ProfilePage.css">
+  <script src="navbar.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <script defer src="ProfilePage.js"></script>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <div class="profile-container">
+    <aside class="profile-sidebar">
+      <div class="sidebar-logo">
+        <img src="Asset/logo.png" alt="Dietory Food Logo">
+      </div>
+      <div class="sidebar-profile">
+        <div class="sidebar-profile-pic">
+          <img src="Asset/pp.jpg" alt="Profile Picture">
+        </div>
+        <div class="sidebar-hello">
+          Hello, <span id="sidebarName">User</span>
+        </div>
+        <button class="sidebar-plan-btn">Free Plan</button>
+        <div class="sidebar-premium-text">Consider upgrading to premium?</div>
+      </div>
+      <nav class="sidebar-menu">
+        <button class="sidebar-menu-btn active">
+          <a href="#" data-page="ProfilePage">Account</a>
+        </button>
+        <button class="sidebar-menu-btn">
+          <a href="#" data-page="MealPlans">Diet Menu</a>
+        </button>
+      </nav>
+    </aside>
+    <main class="profile-main">
+      <header class="profile-header">
+        <nav>
+          <a href="#" data-page="HomePage">Home</a>
+          <a href="#" data-page="MealPlans">Meal Plans</a>
+          <a href="#" data-page="DietPlans">Diet Plans</a>
+          <a href="#" data-page="Calculator">Calculator</a>
+          <a href="#" data-page="ProfilePage">Profile</a>
+        </nav>
+      </header>
+      <section class="profile-content">
+        <div class="profile-top">
+          <div class="profile-pic-large">
+            <img src="Asset/pp.jpg" alt="Profile Picture">
+          </div>
+          <div class="profile-info">
+            <div class="profile-name" id="profileName">Lady Flora</div>
+            <div class="profile-info-row">
+              <input type="text" id="emailProfile" readonly>
+              <input type="text" value="Monthly Fee of $/month" readonly>
+            </div>
+            <div class="profile-info-row">
+              <input type="text" value="Free Subscription" readonly>
+              <input type="text" value="Yearly Fee of $/month" readonly>
+            </div>
+          </div>
+        </div>
+        <div class="profile-health">
+          <h3>Health Details</h3>
+          <div class="profile-health-list">
+            <div class="profile-health-row">
+              <span>First name</span>
+              <span id="firstName"></span>
+            </div>
+            <div class="profile-health-row">
+              <span>Last name</span>
+              <span id="lastName"></span>
+            </div>
+            <div class="profile-health-row">
+              <span>BMI</span>
+              <span id="profileBMI">-</span>
+            </div>
+            <div class="profile-health-row">
+              <span>Date of birth</span>
+              <span id="dob"></span>
+            </div>
+            <div class="profile-health-row">
+              <span>Sex</span>
+              <span id="sex"></span>
+            </div>
+            <div class="profile-health-row">
+              <span>Blood type</span>
+              <span>Not set</span>
+            </div>
+            <div class="profile-health-row">
+              <span>Dietery Preferences</span>
+              <span>Paleo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activities</title>
+  <link rel="stylesheet" href="OtherPage.css">
+  <script src="navbar.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="Asset/logo.png" alt="Dietory Food Logo">
+      </div>
+      <div class="sidebar-profile">
+        <div class="sidebar-profile-pic">
+          <img src="Asset/pp.jpg" alt="Profile Picture">
+        </div>
+        <div class="sidebar-hello">
+          Hello, <span id="sidebarName">User</span>
+        </div>
+        <button class="sidebar-plan-btn" style="border:2px solid #a4c63f;color:#a4c63f;background:#fff;">Premium</button>
+        <div class="sidebar-premium-text">Enjoy your premium features!</div>
+      </div>
+      <nav class="sidebar-menu">
+        <button class="sidebar-menu-btn">
+          <a href="#" data-page="ProfilePage">Account</a>
+        </button>
+        <button class="sidebar-menu-btn">
+          <a href="#" data-page="MealPlans">Diet Menu</a>
+        </button>
+        <button class="sidebar-menu-btn active">
+          <a href="#" data-page="DietPlans">Activity</a>
+        </button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="header">
+        <nav>
+          <a href="#" data-page="HomePage">Home</a>
+          <a href="#" data-page="MealPlans">Meal Plans</a>
+          <a href="#" data-page="DietPlans">Diet Plans</a>
+          <a href="#" data-page="Calculator">Calculator</a>
+          <a href="#" data-page="ProfilePage">Profile</a>
+        </nav>
+      </header>
+    <div class="top-section">
+        <section class="carousel-section">
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/Fitness carousel/Believe Fitness.webp" alt="Believe fitness" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Believe fitness</div>
+                  <div class="carousel-desc">
+                    apartemen pacific garden M floor</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/Fitness carousel/Gold's Gym.png" alt="Golds Gym" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Gold's Gym</div>
+                  <div class="carousel-desc">mall alam sutera LG floor</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/Fitness carousel/Fithub Gym.png" alt="Fithub" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Fithub</div>
+                  <div class="carousel-desc">Jl. Jalur Sutera Barat. Kav 19 b</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+      <section class="content">
+        <div style="display:flex;gap:32px;align-items:flex-start;">
+          <!-- Daily Activities -->
+          <div style="flex:1;">
+            <div style="font-size:1.4rem;font-weight:700;color:#666;margin-bottom:10px;">Daily Activities</div>
+            <div style="background:#fff;border-radius:16px;padding:24px 24px 18px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+              <img src="Asset/activities.png" alt="Activity Rings" style="width:250px;display:block;margin:0 auto 18px auto;">
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <div style="display:flex;justify-content:space-between;">
+                  <span>Move</span>
+                  <span><span style="color:#a4c63f;">1278</span>/<span style="color:#e57373;">2000</span></span>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span>Exercise</span>
+                  <span><span style="color:#4caf50;">21min</span>/<span style="color:#388e3c;">60min</span></span>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span>Stand</span>
+                  <span><span style="color:#2196f3;">3hr/10hrs</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Today & History -->
+          <div style="flex:2;display:flex;flex-direction:column;gap:24px;">
+            <!-- Today -->
+            <div>
+              <div style="font-size:1.4rem;font-weight:700;color:#666;margin-bottom:10px;">Today</div>
+              <div style="display:flex;gap:18px;">
+                <div style="flex:1;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;align-items:center;gap:12px;">
+                  <i class="fa-solid fa-person-walking" style="font-size:2rem;color:#22642a;"></i>
+                  <div>
+                    <div style="font-weight:600;">Walk</div>
+                    <div style="color:#a4c63f;">127Cal</div>
+                  </div>
+                </div>
+                <div style="flex:1;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;align-items:center;gap:12px;">
+                  <i class="fa-solid fa-person-running" style="font-size:2rem;color:#22642a;"></i>
+                  <div>
+                    <div style="font-weight:600;">Run</div>
+                    <div style="color:#4caf50;">592Cal</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- History -->
+            <div>
+              <div style="font-size:1.2rem;font-weight:700;color:#666;margin-bottom:10px;">History</div>
+              <div style="display:flex;gap:18px;">
+                <div style="flex:1;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;align-items:center;gap:12px;">
+                  <i class="fa-solid fa-person-walking" style="font-size:2rem;color:#22642a;"></i>
+                  <div>
+                    <div style="font-weight:600;">Walk</div>
+                    <div style="color:#a4c63f;">127Cal</div>
+                    <div style="font-size:0.9rem;color:#888;">13/03/25</div>
+                  </div>
+                </div>
+                <div style="flex:1;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;align-items:center;gap:12px;">
+                  <i class="fa-solid fa-person-running" style="font-size:2rem;color:#22642a;"></i>
+                  <div>
+                    <div style="font-weight:600;">Run</div>
+                    <div style="color:#4caf50;">340Cal</div>
+                    <div style="font-size:0.9rem;color:#888;">13/03/25</div>
+                  </div>
+                </div>
+                <div style="flex:1;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;align-items:center;gap:12px;">
+                  <i class="fa-solid fa-person-dress" style="font-size:2rem;color:#22642a;"></i>
+                  <div>
+                    <div style="font-weight:600;">Dance</div>
+                    <div style="color:#e57373;">187Cal</div>
+                    <div style="font-size:0.9rem;color:#888;">12/03/25</div>
+                  </div>
+                </div>
+              </div>
+              <div style="text-align:center;margin-top:12px;">
+                <a href="#" style="color:#388e3c;font-weight:600;text-decoration:underline;">Show more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

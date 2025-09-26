@@ -1,0 +1,166 @@
+/* Style untuk Login & Register Page */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #222;
+}
+
+.login-bg {
+  min-height: 100vh;
+  background: #2e7d3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.login-logo {
+  text-align: center;
+}
+
+.login-logo img {
+  width: 160px;
+  height: auto;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 36px 38px 28px 38px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-card h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  color: #22642a;
+  margin: 0 0 18px 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.login-card label {
+  display: block;
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+}
+
+.login-card input[type="text"],
+.login-card input[type="email"],
+.login-card input[type="tel"],
+.login-card input[type="date"],
+.login-card input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #eaeaea;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: background 0.2s;
+}
+
+.login-card input[type="text"]:focus,
+.login-card input[type="email"]:focus,
+.login-card input[type="tel"]:focus,
+.login-card input[type="date"]:focus,
+.login-card input[type="password"]:focus {
+  background: #d6e6d6;
+}
+
+.signup-link {
+  margin: 10px 0 18px 0;
+  color: #888;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #22642a;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px 0;
+  background: #2e7d3a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #22642a;
+}
+
+.sex-choice {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.sex-choice input[type="radio"] {
+  display: none;
+}
+
+.sex-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border 0.2s, background 0.2s;
+  font-size: 1rem;
+  color: #22642a;
+}
+
+.sex-choice input[type="radio"]:checked + .sex-icon {
+  border: 2px solid #22642a;
+  background: #e6f4ea;
+}
+
+.sex-icon i {
+  font-size: 1.3em;
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    min-width: 90vw;
+    padding: 24px 8vw 20px 8vw;
+  }
+  .login-logo img {
+    width: 120px;
+  }
+}

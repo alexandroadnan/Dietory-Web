@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="LoginRegister.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+</head>
+<body>
+  <div class="login-bg">
+    <div class="login-logo">
+      <img src="Asset/logo.png" alt="Dietory Food Logo">
+    </div>
+    <div class="login-card">
+      <h2>REGISTER</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+        
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="sex">Sex</label>
+        <div class="sex-choice">
+          <input type="radio" id="male" name="sex" value="Male" required>
+          <label for="male" class="sex-icon">
+            <i class="fa-solid fa-mars"></i>
+            <span>Male</span>
+          </label>
+          <input type="radio" id="female" name="sex" value="Female" required>
+          <label for="female" class="sex-icon">
+            <i class="fa-solid fa-venus"></i>
+            <span>Female</span>
+          </label>
+        </div>
+        <span id="sex"></span>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" required>
+        
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password" required>
+        
+        <div class="signup-link">
+          Already have an account? <a href="LoginPage.html">Login</a>
+        </div>
+        <button type="submit" class="login-btn">Register</button>
+      </form>
+    </div>
+  </div>
+  <script src="RegisterPage.js"></script>
+</body>
+</html>

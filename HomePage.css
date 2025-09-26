@@ -1,0 +1,480 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.8vw;
+  height: 435px;
+  background: 
+    linear-gradient(rgba(30,30,30,0.45), rgba(30,30,30,0.45)),
+    url('Asset/main background.avif') center top/cover no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Pastikan header, .top-section, dan .carousel-section berada di atas background */
+header,
+.top-section {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+/* Jika ingin tetap ada efek card, tambahkan backdrop-filter */
+.events-section,
+.carousel {
+  backdrop-filter: blur(2px) brightness(1.1);
+  border-radius: 12px;
+}
+
+/* Mulai dari .main-content (intro-card dan seterusnya) background kembali normal */
+.main-content {
+  position: relative;
+  z-index: 2;
+  background: none;
+}
+
+header {
+  background: transparent;;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ffb84d;
+}
+
+.get-started {
+  background: #6fcf97;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.get-started:hover {
+  background: #4caf50;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.top-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.events-section {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.events-section h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.events-section .events {
+    padding-top: 30px;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  /* Membuat area event lebih panjang secara horizontal */
+  min-width: 595px;
+}
+
+.event-card {
+  background: #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 180px;
+  height: 180px; /* Membuat gambar tetap kotak */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 180px; /* Supaya tidak mengecil saat overflow */
+}
+
+.event-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-section {
+  flex: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  height: 320px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 48px; /* Tambahkan margin agar ada ruang untuk tombol di luar */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 20px 20px 20px;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.carousel-food-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+.carousel-food-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  color: #388e3c;
+}
+
+.carousel-food-desc {
+  font-size: 0.7rem;
+  color: #888;
+  margin-bottom: 18px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  line-height: 1.4;
+}
+
+.carousel-recipe-btn {
+  background: #e6c96a;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.carousel-recipe-btn:hover {
+  background: #d4b44c;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  /* Tambahkan shadow agar tombol tetap terlihat */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+}
+
+.carousel-btn.prev {
+  left: -44px; /* Geser tombol ke luar kotak carousel */
+}
+
+.carousel-btn.next {
+  right: -44px; /* Geser tombol ke luar kotak carousel */
+}
+
+.main-content {
+  display: flex;
+  gap: 30px;
+}
+
+.intro-card {
+  background: #388e3c;
+  color: #fff;
+  border-radius: 12px;
+  padding: 28px 28px 20px 28px;
+  flex: 1.2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  background: #bdbdbd;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+
+.intro-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.intro-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e0f2f1;
+}
+
+.diet-plan-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 20px;
+  flex: 1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.diet-plan-header {
+  margin-bottom: 18px;
+}
+
+.diet-plan-header h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.macros {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.macros > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.macros span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.macros strong {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.bar {
+  width: 40px;
+  height: 6px;
+  border-radius: 3px;
+  margin-top: 4px;
+}
+
+.bar.protein { background: #6fcf97; }
+.bar.carbs { background: #f2c94c; }
+.bar.fat { background: #56ccf2; }
+
+.meals-list {
+  margin-top: 10px;
+}
+
+.meal {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.meal:hover {
+  background: #e6f4ea;
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.15);
+  transform: translateY(-3px) scale(1.03);
+}
+
+.meal-title {
+  font-weight: 600;
+  color: #388e3c;
+  font-size: 1rem;
+}
+
+.meal-calories {
+  float: right;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.meal-detail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.meal-detail img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.meal-detail strong {
+font-family:poppins, sans-serif;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.meals-list {
+    font-size: 0.8rem;
+}
+
+footer {
+  background: #222;
+  padding: 18px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-icons a {
+  color: #6fcf97;
+  font-size: 1.7rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+}
+
+.footer-icons a:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .intro-card, .diet-plan-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+  .carousel-section {
+    margin-top: 20px;
+  }
+}
+
+/* Responsive: pastikan background pattern tetap di atas pada mobile */
+@media (max-width: 900px) {
+  .bg-pattern {
+    height: 600px;
+  }
+}
+

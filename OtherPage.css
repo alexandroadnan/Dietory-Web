@@ -1,0 +1,603 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #222;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98.8vw;
+  height: 340px;
+  background: 
+    linear-gradient(rgba(30,30,30,0.45), rgba(30,30,30,0.45)),
+    url('Asset/main background.avif') center top/cover no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.sidebar {
+  flex: 0 0 260px;
+  width: 260px;
+  background: #2e7d3a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 0;
+  min-height: 100vh;
+  z-index: 2;
+  position: relative;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.10);
+}
+
+.sidebar-logo img {
+  width: 150px;
+}
+
+.sidebar-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.sidebar-profile-pic {
+  width: 80px;
+  height: 80px;
+  background: #bdbdbd;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar-hello {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar-plan-btn {
+  background: #fff;
+  color: #2e7d3a;
+  border: none;
+  border-radius: 16px;
+  padding: 7px 36px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.sidebar-premium-text {
+  font-size: 0.85rem;
+  color: #c8e6c9;
+  margin-bottom: 18px;
+}
+
+.sidebar-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-menu-btn {
+  width: 80%;
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar-menu-btn.active,
+.sidebar-menu-btn:hover {
+  background: #fff;
+  color: #388e3c;
+  border: 2px solid #388e3c;
+  
+}
+
+.main {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  min-height: 100vh;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 260px; /* Lebar sidebar */
+  right: 0;
+  height: 200px;
+  background: 
+    linear-gradient(rgba(30,30,30,0.35), rgba(30,30,30,0.35)),
+    url('Asset/main background.avif') center top/cover no-repeat;
+  z-index: 1;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 32px;
+  pointer-events: none;
+}
+
+.header {
+  width: 96%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+  padding: 30px 40px 0 0;
+  z-index: 3;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.header nav a:hover {
+  color: #ffb84d;
+}
+
+.content {
+  flex: 1;
+  width: 78.5vw;
+  max-width: 100%;
+  background: #f6f7fa;
+  border-radius: 0;
+  margin-left: 0;
+  margin-top: 30px;
+  padding: 24px 24px 24px 24px;
+  min-height: 80vh;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-sizing: border-box;
+  font-size: 14px; /* default lebih kecil */    
+}
+
+.top-section,
+.carousel-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.diet-menu-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.diet-summary-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 16px 18px;
+  margin-bottom: 18px;
+}
+
+.diet-summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.diet-summary-label {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.diet-summary-value {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 700;
+}
+
+.diet-macros {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.diet-macro-box {
+  background: #f7f7f7;
+  border-radius: 7px;
+  padding: 10px 12px;
+  text-align: center;
+  min-width: 80px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.diet-macro-label {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.diet-macro-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #444;
+}
+
+.diet-macro-bar {
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  background: #e0e0e0;
+  overflow: hidden;
+  position: relative;
+}
+.diet-macro-bar-inner {
+  height: 100%;
+  border-radius: 4px;
+  position: absolute;
+  left: 0; top: 0;
+}
+
+.diet-macro-bar.protein .diet-macro-bar-inner { background: #4caf50; width: 20%; }
+.diet-macro-bar.carbs .diet-macro-bar-inner { background: #ffc107; width: 47%; }
+.diet-macro-bar.fat .diet-macro-bar-inner { background: #2196f3; width: 28%; }
+
+.diet-pref-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.diet-pref-label {
+  font-size: 1rem;
+  color: #888;
+  font-weight: 600;
+}
+
+.diet-pref-value {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 700;
+}
+
+.meals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.meal {
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.meal:hover {
+  box-shadow: 0 6px 20px rgba(34,100,42,0.13);
+  transform: translateY(-4px) scale(1.02);
+  background: #f3fbe9;
+  cursor: pointer;
+}
+
+.meal-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.meal-calories {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.meal-detail {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.meal-detail img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 7px;
+  flex-shrink: 0;
+  background: #eee;
+}
+
+.meal-detail strong {
+  font-size: 1rem;
+  color: #22642a;
+  font-weight: 700;
+}
+
+.meal-detail div {
+  color: #444;
+  font-size: 0.93rem;
+}
+
+.profile-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.profile-pic-large {
+  width: 110px;
+  height: 110px;
+  background: #bdbdbd;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.profile-info-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.profile-info input {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  width: 260px;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.profile-fee {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 32px;
+  margin-top: 10px;
+}
+
+.profile-fee input {
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  width: 260px;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.profile-health {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px 24px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.profile-health h3 {
+  margin-top: 0;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.profile-health-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-health-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Carousel gym: tiga box sejajar dan responsif */
+.carousel-track {
+  display: flex;
+  gap: 50px;              /* Jarak antar box */
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 24px 18px 18px 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  height: 80%;
+}
+
+.carousel-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #22642a;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.carousel-desc {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.carousel-card:hover {
+  box-shadow: 0 6px 20px rgba(34,100,42,0.13);
+  transform: translateY(-4px) scale(1.03);
+  background: #f3fbe9;
+}
+
+.carousel-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  background: #fffd;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.carousel-recipe-btn {
+  background: #a4c63f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.carousel-recipe-btn:hover {
+  background: #388e3c;
+}
+
+/* Responsive: tumpuk ke bawah di layar kecil */
+@media (max-width: 900px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-sidebar {
+    width: 100%;
+    flex-direction: row;
+    min-height: unset;
+    padding: 18px 0;
+    justify-content: flex-start;
+  }
+  .profile-main {
+    padding: 0;
+  }
+  .profile-content {
+    padding: 18px 8vw 18px 8vw;
+    margin-top: 0;
+  }
+  .profile-top {
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .profile-fee {
+    margin-left: 0;
+  }
+  .diet-summary-box {
+    padding: 8px 2vw;
+  }
+  .meal {
+    padding: 8px 2vw;
+  }
+  .carousel-track {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .carousel-item {
+    width: 90vw;
+    max-width: 340px;
+    min-width: unset;
+  }
+}

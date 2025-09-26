@@ -1,0 +1,176 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dietory - Home Page</title>
+  <script src="HomePage.js"></script>
+  <script src="navbar.js"></script>
+  <link rel="stylesheet" href="HomePage.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <header>
+    <div class="logo"><img src="Asset/Logo.png" alt="Dietory"></div>
+    <nav>
+      <a href="#" data-page="HomePage">Home</a>
+      <a href="#" data-page="MealPlans">Meal Plans</a>
+      <a href="#" data-page="DietPlans">Diet Plans</a>
+      <a href="#" data-page="Calculator">Calculator</a>
+      <a href="#" data-page="ProfilePage">Profile</a>
+      <button class="get-started">GET STARTED</button>
+    </nav>
+  </header>
+  <main>
+    <div class="top-section">
+      <section class="events-section">
+        <h3>Upcoming Events</h3>
+        <div class="events">
+          <div class="event-card"><img src="Asset/Upcomming event/150x150_Logo.png" alt="Event 1"></div>
+          <div class="event-card"><img src="Asset/Upcomming event/sumut run.jpeg" alt="Event 2"></div>
+          <div class="event-card"><img src="Asset/Upcomming event/East-Java-Running-Fest.jpg" alt="Event 3"></div>
+        </div>
+      </section>
+      <section class="carousel-section">
+        <div class="carousel">
+          <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-track">
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="Asset/home carousel/salad bowl.png!bw700" alt="Salad Bowl" class="carousel-food-img">
+                <div class="carousel-food-title">Salad Bowl</div>
+                <div class="carousel-food-desc">
+                  a cold dish of various mixtures of raw or cooked vegetables, usually seasoned with oil, vinegar, or other dressing.
+                </div>
+                <button class="carousel-recipe-btn">Recipe!</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="Asset/home carousel/salmon carrot bowl.avif" alt="Salmon Carrot Bowl" class="carousel-food-img">
+                <div class="carousel-food-title">Salmon Carrot Bowl</div>
+                <div class="carousel-food-desc">
+                  Salmon fillet served with fresh carrots, greens, and a light dressing. High in protein and omega-3.
+                </div>
+                <button class="carousel-recipe-btn">Recipe!</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="Asset/home carousel/fruit tart.jpg" alt="Fruit Tart" class="carousel-food-img">
+                <div class="carousel-food-title">Fruit Tart</div>
+                <div class="carousel-food-desc">
+                  A sweet pastry crust filled with custard and topped with fresh fruits. Perfect for dessert.
+                </div>
+                <button class="carousel-recipe-btn">Recipe!</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </section>
+    </div>
+    <section class="main-content">
+      <div class="intro-card">
+        <div class="intro-header">
+          <div class="profile-pic"><img src="Asset/Jokowi-pcr.webp"></div>
+          <div>
+            <h2>Improve Your Life Style with a<br>Simple Diet Breakdown</h2>
+          </div>
+        </div>
+        <p>
+          I want to live a healthy life in the most effortless way possible. I want to get my diet and nutrition right because it allows me to do the more important things in life, but I also don’t want to spend all day thinking about what I eat.<br>
+          I think my time and energy should be spent building things that matter, pursuing adventure and exploring the world, connecting and sharing with the people around me, and working toward goals that are important to me.<br>
+          Because of that, I have spent the last few months trying different strategies that make it easier for me to eat healthy without much effort.<br>
+          Most people get wrapped up in the details and strategies of a particular diet and never get around to actually following it. I like to keep things simple. I’d prefer to abandon the details, understand the main idea, and actually make adjustments.<br>
+          I don’t have all the answers, of course, but here’s what is working for me right now and how you can use these ideas to eat healthy, lose weight, and gain muscle.
+        </p>
+      </div>
+      <div class="diet-plan-card">
+        <div class="diet-plan-header">
+          <h4>Diet Plan</h4>
+          <div class="macros">
+            <div>
+              <span>Calories</span>
+              <strong>1000</strong>
+            </div>
+            <div>
+              <span>Protein</span>
+              <strong>75g</strong>
+              <div class="bar protein"></div>
+            </div>
+            <div>
+              <span>Carbs</span>
+              <strong>200g</strong>
+              <div class="bar carbs"></div>
+            </div>
+            <div>
+              <span>Fat</span>
+              <strong>50g</strong>
+              <div class="bar fat"></div>
+            </div>
+          </div>
+        </div>
+        <div class="meals-list">
+          <div class="meal">
+            <span class="meal-title">Breakfast</span>
+            <span class="meal-calories">Total: 210 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/breakfast/Toast.jpg" alt="Toast Bread">
+              <div>
+                <strong>Toast Bread</strong>
+                <div>3 Servings - Ingredients</div>
+                <div>210kcal, 6g Prot, 30g Carbs, 2.7g Fat, 1.8g Fib</div>
+              </div>
+            </div>
+          </div>
+          <div class="meal">
+            <span class="meal-title">Breakfast</span>
+            <span class="meal-calories">Total: 180 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/breakfast/greek gurt yo.jpeg" alt="Greek Yogurt & Berries">
+              <div>
+                <strong>Greek Gurt: yo & Berries</strong>
+                <div>100g yogurt, 50g mixed berries</div>
+                <div>180kcal, 10g Protein, 25g Carbs, 3g Fat, 2g Fiber</div>
+              </div>
+            </div>
+          </div>
+          <div class="meal">
+            <span class="meal-title">Breakfast</span>
+            <span class="meal-calories">Total: 250 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/breakfast/oatmeal.webp" alt="Oatmeal with Banana">
+              <div>
+                <strong>Oatmeal with Banana</strong>
+                <div>1 bowl (40g oats, 1 banana)</div>
+                <div>250kcal, 6g Protein, 45g Carbs, 4g Fat, 4g Fiber</div>
+              </div>
+            </div>
+          </div>
+          <div class="meal">
+            <span class="meal-title">Breakfast</span>
+            <span class="meal-calories">Total: 150 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/breakfast/boiled egg.webp" alt="Boiled Egg">
+              <div>
+                <strong>Boiled Egg</strong>
+                <div>1 large egg</div>
+                <div>150kcal, 6g Protein, 1g Carbs, 10g Fat, 0g Fiber</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>

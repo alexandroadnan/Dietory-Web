@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diet Menu</title>
+  <link rel="stylesheet" href="OtherPage.css">
+  <script src="navbar.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="Asset/logo.png" alt="Dietory Food Logo">
+      </div>
+      <div class="sidebar-profile">
+        <div class="sidebar-profile-pic">
+          <img src="Asset/pp.jpg" alt="Profile Picture">
+        </div>
+        <div class="sidebar-hello">
+          Hello, <span id="sidebarName">User</span>
+        </div>
+        <button class="sidebar-plan-btn">Free Plan</button>
+        <div class="sidebar-premium-text">Consider upgrading to premium?</div>
+      </div>
+      <nav class="sidebar-menu">
+        <button class="sidebar-menu-btn">
+          <a href="#" data-page="ProfilePage">Account</a>
+        </button>
+        <button class="sidebar-menu-btn active">
+          <a href="#" data-page="MealPlans">Diet Menu</a>
+        </button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="header">
+        <nav>
+          <a href="#" data-page="HomePage">Home</a>
+          <a href="#" data-page="MealPlans">Meal Plans</a>
+          <a href="#" data-page="DietPlans">Diet Plans</a>
+          <a href="#" data-page="Calculator">Calculator</a>
+          <a href="#" data-page="ProfilePage">Profile</a>
+        </nav>
+      </header>
+      <div class="top-section">
+        <section class="carousel-section">
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/home carousel/salad bowl.png!bw700" alt="Believe fitness" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Salad Bowl</div>
+                  <div class="carousel-desc">
+                    a cold dish of various mixtures.</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/home carousel/salmon carrot bowl.avif" alt="Golds Gym" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Salmon Carrot Bowl</div>
+                  <div class="carousel-desc">Salmon fillet served with carrot.</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-card" style="min-width:200px;align-items:center;">
+                  <img src="Asset/home carousel/fruit tart.jpg" alt="Fithub" style="width:70px;height:70px;border-radius:16px;background:#fffd;">
+                  <div class="carousel-title">Fruit Tart</div>
+                  <div class="carousel-desc">A sweet pastry crust</div>
+                  <button class="carousel-recipe-btn" style="margin-top:10px;">Direction</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <section class="content">
+        <div class="diet-menu-title">Diet Menu</div>
+        <div class="diet-summary-box">
+          <div class="diet-summary-row">
+            <span class="diet-summary-label">Weight Category</span>
+            <span class="diet-summary-value">Normal</span>
+          </div>
+          <div class="diet-macros">
+            <div class="diet-macro-box">
+              <span class="diet-macro-label">Calories</span>
+              <span class="diet-macro-value">1000</span>
+              <div class="diet-macro-bar">
+                <div class="diet-macro-bar-inner" style="background:#e0e0e0;width:100%"></div>
+              </div>
+            </div>
+            <div class="diet-macro-box">
+              <span class="diet-macro-label">Protein</span>
+              <span class="diet-macro-value">75g</span>
+              <div class="diet-macro-bar protein">
+                <div class="diet-macro-bar-inner"></div>
+              </div>
+            </div>
+            <div class="diet-macro-box">
+              <span class="diet-macro-label">Carbs</span>
+              <span class="diet-macro-value">200g</span>
+              <div class="diet-macro-bar carbs">
+                <div class="diet-macro-bar-inner"></div>
+              </div>
+            </div>
+            <div class="diet-macro-box">
+              <span class="diet-macro-label">Fat</span>
+              <span class="diet-macro-value">50g</span>
+              <div class="diet-macro-bar fat">
+                <div class="diet-macro-bar-inner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="diet-pref-row">
+            <span class="diet-pref-label">Dietary Preferences</span>
+            <span class="diet-pref-value">Paleo</span>
+          </div>
+        </div>
+        <div class="meals-list">
+          <!-- Breakfast -->
+          <div class="meal">
+            <span class="meal-title">Breakfast</span>
+            <span class="meal-calories">Total: 210 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/breakfast/Toast.jpg" alt="Toast Bread">
+              <div>
+                <strong>Toast Bread</strong>
+                <div>3 Servings - Ingredients</div>
+                <div>210kcal, 6g Protein, 30g Carbs, 2.7g Fat, 1.8g Fiber</div>
+              </div>
+            </div>
+          </div>
+          <!-- Lunch -->
+          <div class="meal">
+            <span class="meal-title">Lunch</span>
+            <span class="meal-calories">Total: 350 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/menu/chicken salad.jpg" alt="Grilled Chicken Salad">
+              <div>
+                <strong>Grilled Chicken Salad</strong>
+                <div>100g chicken, mixed greens, tomatoes</div>
+                <div>350kcal, 30g Protein, 20g Carbs, 15g Fat, 4g Fiber</div>
+              </div>
+            </div>
+          </div>
+          <!-- Dinner -->
+          <div class="meal">
+            <span class="meal-title">Dinner</span>
+            <span class="meal-calories">Total: 320 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/menu/salmon broccoli.jpg" alt="Salmon & Broccoli">
+              <div>
+                <strong>Salmon & Broccoli</strong>
+                <div>100g salmon, 80g broccoli</div>
+                <div>320kcal, 25g Protein, 10g Carbs, 18g Fat, 3g Fiber</div>
+              </div>
+            </div>
+          </div>
+          <!-- Snack -->
+          <div class="meal">
+            <span class="meal-title">Snack</span>
+            <span class="meal-calories">Total: 120 Calories</span>
+            <div class="meal-detail">
+              <img src="Asset/menu/fruit bowl.jpg" alt="Fruit Bowl">
+              <div>
+                <strong>Fruit Bowl</strong>
+                <div>Mixed fruits (apple, banana, berries)</div>
+                <div>120kcal, 2g Protein, 28g Carbs, 0.5g Fat, 3g Fiber</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

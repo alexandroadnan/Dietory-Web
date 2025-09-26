@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="BMI.CSS">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap">
+  <script src="BMI.js"></script>
+  <script src="navbar.js"></script>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <header>
+    <div class="logo"><img src="Asset/Logo.png" alt="Dietory"></div>
+    <nav>
+      <a href="#" data-page="HomePage">Home</a>
+      <a href="#" data-page="MealPlans">Meal Plans</a>
+      <a href="#" data-page="DietPlans">Diet Plans</a>
+      <a href="#" data-page="Calculator">Calculator</a>
+      <a href="#" data-page="ProfilePage">Profile</a>
+    </nav>
+  </header>
+    <div class="bmi-content">
+      <div class="bmi-card bmi-card-left">
+        <div class="bmi-person">
+          <img src="Asset/Human.png" alt="Person" />
+        </div>
+        <div class="bmi-height-bar">
+          <div class="bmi-bar">
+            <div class="bmi-bar-fill" id="heightBar"></div>
+          </div>
+          <div class="bmi-height-labels">
+            <span>200</span>
+            <span>190</span>
+            <span>180</span>
+            <span>170</span>
+            <span>160</span>
+            <span>150</span>
+            <span>140</span>
+            <span>130</span>
+            <span>120</span>
+            <span>110</span>
+          </div>
+        </div>
+      </div>
+      <div class="bmi-card bmi-card-center">
+        <div class="bmi-gender">
+          <button id="maleBtn" class="bmi-gender-btn active"><i class="fa-solid fa-mars"></i> Male</button>
+          <button id="femaleBtn" class="bmi-gender-btn"><i class="fa-solid fa-venus"></i> Female</button>
+        </div>
+        <div class="bmi-input-group">
+          <div class="bmi-input-box">
+            <div class="bmi-input-label">Weight<br><span>(Kilograms)</span></div>
+            <div class="bmi-input-value" id="weightValue">70</div>
+            <div class="bmi-input-controls">
+              <button type="button" class="bmi-minus" onclick="changeValue('weight', -1)">-</button>
+              <button type="button" class="bmi-plus" onclick="changeValue('weight', 1)">+</button>
+            </div>
+          </div>
+          <div class="bmi-input-box">
+            <div class="bmi-input-label">Age</div>
+            <div class="bmi-input-value" id="ageValue">20</div>
+            <div class="bmi-input-controls">
+              <button type="button" class="bmi-minus" onclick="changeValue('age', -1)">-</button>
+              <button type="button" class="bmi-plus" onclick="changeValue('age', 1)">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="bmi-input-box bmi-height-input">
+          <div class="bmi-input-label">Height (cm)</div>
+          <input type="range" id="heightRange" min="110" max="200" value="170" oninput="updateHeightBar()">
+          <div class="bmi-range-value" id="heightValue">170</div>
+        </div>
+        <button class="bmi-calc-btn" onclick="calculateBMI()">Calculate</button>
+      </div>
+      <div class="bmi-card bmi-card-result">
+        <div class="bmi-result-circle">
+          <div class="bmi-result-label">Your BMI is</div>
+          <div class="bmi-result-value" id="bmiResultValue">--</div>
+          <div class="bmi-result-category" id="bmiResultCategory">-</div>
+        </div>
+        <div class="bmi-result-desc" id="bmiResultDesc">
+          Enter your data and press Calculate.
+        </div>
+      </div>
+    </div>
+    <footer class="bmi-footer">
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</body>
+</html>
